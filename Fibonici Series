@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main{
+    public static void main(String abc[]){
+        Scanner read=new Scanner(System.in);
+        System.out.println("Enter no.of elements required");
+        int n=read.nextInt();
+        int f1=1,f2=1,f3;
+        System.out.println("The fibbinoci series upto "+n+"numbers is :");
+        System.out.print(f1+" "+f2+" ");
+        int count=2;
+        while(count<n){
+            f3=f1+f2;
+            System.out.print(f3+" ");
+            f1=f2;
+            f2=f3;
+            count=count+1;
+        }
+    }
+}
